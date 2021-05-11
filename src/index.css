@@ -1,13 +1,187 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+ 
+ 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* navbar.jsx */
+.bgnav{
+  background-color: white !important;
+  width: 100%;
 }
+section{
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar .navbar-brand{
+  color: rgb(4, 9, 77) !important;
+}
+
+a.nav-link {
+  font-weight: bold;
+  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+ 
+}
+
+.navbar-light .navbar-brand {
+  /* color: rgba(10, 0, 0, 0.9) !important; */
+  font-size: 1.4rem; 
+  font-weight: bold !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.menu_active{
+  font-weight: bold;
+  border-bottom: 2px solid rgb(15, 206, 24);
+  color: rgb(7, 245, 253) !important;
+  
+}
+.navbar-light .navbar-brand:hover {
+  
+  border-bottom: 2px solid rgb(15, 206, 24);
+}
+
+/***************************** Home.jsx**************************** */
+
+section#header {
+  width: 100%;
+  height: 85vh;
+}
+
+#header h1{
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+}
+#header .brand-name{
+  color: rgb(23, 26, 184);
+}
+
+#header h2{
+  color: rgb(0, 143, 43);
+  font-size: 30px;
+}
+
+#header .btn-get-started{
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  /* display: inline-block; */
+  padding: 10px 30px;
+  border-radius: 50px;
+  color: rgb(24, 170, 175);
+  border: 2px solid rgb(24, 170, 175);
+  text-decoration: none;
+}
+#header .btn-get-started:hover{
+  background: rgb(24, 170, 175);
+  color: white;
+}
+#header .header-img{
+  text-align: center;
+}
+#header .animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    
+    transform: translateY(-10px);
+    
+  }
+}
+
+@keyframes up-down{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    
+    transform: translateY(-10px);
+    
+  }
+}
+
+/* ***************** contact_div********* */
+.contact_div{
+  width: 100%;
+  height: 75vh;
+}
+footer p{
+  padding: 0;
+  margin: 0;
+}
+
+
+
+/* @media */
+
+@media only screen and (max-width: 600px) {
+      div#navbarSupportedContent {
+        text-align: center;
+    }
+    .navbar-light .navbar-brand:hover {
+      
+      border-bottom: none;
+    }
+    a.nav-link:hover {
+    border-bottom: none;
+    }
+    .brand-name{
+      color: rgb(51, 14, 138);
+    }
+    .contact_div {
+      /* width: 100%; */
+      height: 87vh;
+  }
+
+    /* home */
+    #header {
+      text-align: center;
+    }
+    img{
+      width: 70%;
+    }
+    
+}
+
+
+@media only screen and (max-width: 990px)  {
+  *{
+    overflow-x: hidden;
+  }
+  section#header {
+   
+    height: 600px;
+    text-align: center;
+  }
+  
+img{
+  width: 60%;
+}
+.col-md-6.pt-5.pt-lg-0.order-2.order-lg-1.d-flex.justify-content-center.flex-column {
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+}
+@media only screen and (max-width: 370px){
+  section#header {
+    height: 650px;
+  }
+  
+img{
+  width: 50%;
+}
+}
+
+
+
